@@ -12,10 +12,10 @@
 
 **Início**
 
-<img src="Screenshot/img1.png">
+<img src="screenshot/img1.png">
 
 
 
 **About Us**
 
-<img src="Screenshot/img2.png">
+<img src="screenshot/img2.png">
