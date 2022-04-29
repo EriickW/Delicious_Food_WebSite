@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;800&display=swap');
+
+:root{
+    --verdeFundo: #6dcb6a;
+    --cinzaBox:#F2F2F2;
+    --vermelhoDestaque: #BF5E3B;
+    --fontTexto:Montserrat;
+    --fontTitulo:Poppins;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: var(--fontTexto);
+
+}
+body{
+    width: 100%; 
+    background: var(--cinzaBox);
+
+}
+header{
+    position: absolute;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+header p{
+    margin-left: 20px;
+}
+.links{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.links a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+}
+.icone{
+    
+    display: flex;
+    align-items: center;
+    
+    
+}
+.icone ion-icon {
+    position: absolute;
+    color:var(--verdeFundo);
+    right:0px;
+    width: 100px;
+    z-index: 2;
+    font-size: 40px;
+}
+  /* Inicio */
+.prato1{
+    position: relative;
+    width: 750px;
+    z-index: 1;
+}
+main{
+    height: 657px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: var(--verdeFundo);
+    color: white;
+}
+main p{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--cinzaBox);
+}
+main h1{
+    font-family: var(--fontTitulo);
+    font-size: 70px;
+}
+.textoInicio{
+    margin-left: 20px;
+    width: 600px;
+}
+.circle{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 657px;
+    background: white;
+    clip-path: circle(50% at 85%);
+    z-index: 0;
+}
+.btnInicio{
+ padding: 10px;
+ font-size: 15px;
+ font-weight: 600;
+ color:white;
+ background: transparent;
+ border: 2px solid white;
+ border-radius: 20px;
+ transition: all 0.5s ease-in-out;
+}
+.btnInicio:hover{
+    background: white;
+    color: var(--verdeFundo);
+}
+.espacamento{
+    height: 30px;
+    width: 100%;
+}
+  /* About */
+#about{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+   
+}
+.imgAbout{
+    width: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgAbout img{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+#about h3{
+    color: rgb(88, 87, 87);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+#about h1{
+    color:rgb(51, 51, 51);
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+#about p{
+    color: rgb(88, 87, 87);
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+#about ul{
+    margin-bottom: 40px;
+}
+#about li{
+    color:rgb(51, 51, 51);
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.btnNormal{
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color:white;
+    background:var(--verdeFundo);
+    border: 2px solid var(--verdeFundo);
+    border-radius: 20px;
+    margin-bottom: -80px;
+    transition: all 0.5s ease-in-out;
+   }
+   .btnNormal:hover{
+       background: transparent;
+       color: var(--verdeFundo);
+   }
+   /* Packeges */
+   .packages{
+       width: 100%;
+       background: var(--verdeFundo);
+       height:600px ;
+       
+   }
+   .textoPackeges{
+       flex-direction: column;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       color: white;
+       
+   }
+   .textoPackeges p{
+    margin-top: 50px;
+    color: var(--cinzaBox);
+   }
+   .textoPackeges h1{
+       font-size: 40px;
+       font-family: var(--fontTitulo);
+       font-weight: 500;
+   }
+   .container{
+       margin-top: 60px;
+        display: flex;
+     align-items: center;
+     justify-content: space-between;
+   }
+   .container .box{
+        background: white;
+        padding: 10px;
+        width: 300px;
+        height: 350px;
+        margin-left: 70px;
+        margin-right: 70px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:center;
+        padding: 0;
+        border-radius: 50px 0px 50px 0px;
+   }
+   .container .box hr{
+       width: 100%;
+       margin-bottom: 20px;
+   }
+   .textPrices{
+        width: 90%;
+        font-size: 15px;
+        margin-bottom: 40px;
+   }
+   .prices{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+   transform: translateY(-45px);
+   }
+   .prices span{
+        font-size: 30px;
+        font-weight: 500;
+    
+        font-family: var(--fontTitulo);
+   }
+   .prices p{
+       font-size: 14px;
+   }
